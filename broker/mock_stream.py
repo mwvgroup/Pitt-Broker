@@ -5,14 +5,11 @@
 
 from kafka import KafkaProducer
 
-from .. import ztf_archive as ztfa
-
-if not ztfa.get_local_alert_list() == 0:
-    raise RuntimeError('No local ZTF data available.')
+from . import ztf_archive as ztfa
 
 
-def send_alerts(
-        max_alerts, bootstrap_servers=[], compression_type='gzip', **kwargs):
+def send_alerts(max_alerts, bootstrap_servers,
+                compression_type='gzip', **kwargs):
     """Load locally available ZTF alerts into the Kafka stream
 
     Args:
