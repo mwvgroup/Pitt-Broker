@@ -1,0 +1,3 @@
+[submodule "astrorapid"]
+	path = astrorapid
+	url = https://github.com/troyraen/astrorapid
