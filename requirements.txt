@@ -11,6 +11,7 @@ google-cloud-storage
 google-cloud-error-reporting
 googleapis-common-protos
 google-resumable-media
+kafka-python
 lxml
 matplotlib
 numpy
