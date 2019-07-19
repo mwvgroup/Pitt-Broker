@@ -46,8 +46,32 @@ XM features:
 # Notes and To Do
 <!-- fs -->
 
-## 7/2/19
-setup a classification code
+## July 9
+1. Have RAPID classifying SN with host galaxy info by July 23rd.
+    * write it to accept dictionary as input (AVRO files are priority, but should be able to accept BigQuery input with some wrapper function.)
+    - mwebv: milky way excess b-v color (dust extinction)
+    - mjd: modified julian date
+    - flux and error: convert PSF mags
+    - zeropoint: magzpsci. ask Daniel
+    - photflag: ask Daniel
+2. Test pub/sub. Try to write automated tests.. input, calling fncs or code trying to test, and expected output.
+
+## RAPID
+<!-- fs -->
+[RAPID](https://astrorapid.readthedocs.io)
+[ZTF Avro Schemas](https://zwickytransientfacility.github.io/ztf-avro-alert/schema.html)
+Meeting prep:
+* RAPID and SuperNNova
+* RAPID more straightforward so setting that up.
+    - but requires redshift info... standard process seems to be to use host gal redshift.
+    - not sure what they do when there's no identified host.
+* Need training dataset. Have galaxy set from Graham and SN, etc. set from PLAsTICC.
+    - not sure if I'm allowed to use either for this purpose.
+
+
+
+<!-- fe ## RAPID -->
+
 
 ## Testing pub_sub branch
 <!-- fs -->
