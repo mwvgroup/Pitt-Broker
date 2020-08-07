@@ -22,8 +22,5 @@ install:
   - pip install coverage
   - pip install pytest-cov
 
-before_script:
-  - python -c "import broker; broker.gcp_setup.setup_testsuite_resources()"
-
 script:
   - coverage run -m pytest
